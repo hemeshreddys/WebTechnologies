@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Page Title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+        <style>
+            *{
+                border: 1px solid black;
+            }
+             #content{
+                    padding: 50px;
+                    text-align: center;
+                }
+            /* Resolution between 0 to 500px */
+            /* ------------------------------*/
+            @media (max-width:500px){
+                body{
+                    background-color:red;
+                    margin:  0px auto;
+
+                }
+                 #content{
+                     background-color:blue;
+                }
+                
+            }
+            
+            /* Resolution between 501 to 800px */
+            /* ------------------------------*/
+            @media (min-width:501px) and (max-width: 800px){
+                body{
+                  background-color:blue;  
+                    margin:  0px auto;
+                }  
+                  #content{
+                     background-color:orange;
+                }
+               
+            }
+            
+            /* Resolution 800 and above  */
+            /* ------------------------------*/
+             @media(min-width:801px){
+                    body{
+                        background-color: aqua;
+                        margin:  0px auto;
+                    }
+                   #content{
+                     background-color:yellow;
+                   }
+                }
+        </style>
+	</head>
+
+	<body>
+        <div id="content">
+            Media queries
+        </div>
+        <script>
+            var wid = document.getElementById("content");
+            wid.innerHTML =window.innerWidth;
+        </script>
+
+	</body>
+</html>
