@@ -1,0 +1,116 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .container {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            border: 5px solid burlywood;
+        }
+        
+        .button,
+        .equals,
+        #disp {
+            padding: 20px;
+            font-family: sans-serif;
+            color: white;
+            background-color: aquamarine;
+            height: 50%;
+            justify-content: space-between;
+            align-items: center;
+            margin: 1px;
+            font-size: 20px;
+        }
+        
+        .button {
+            width: 30%;
+            height: 50%;
+            cursor: pointer;
+            flex-grow: 1;
+        }
+        
+        .button:hover,
+        .equals:hover {
+            background-color: antiquewhite;
+            color: black;
+        }
+        
+        .equals {
+            width: 30%;
+            flex-grow: 1;
+            cursor: pointer;
+        }
+        
+        #disp {
+            background-color: burlywood;
+            font-size: 50px;
+            flex-basis: 100%;
+            height: 50%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+
+    </div>
+    <div class="container">
+        <div id="disp">0</div>
+        <div class="button" value="1" onclick="calculate(1);">1</div>
+        <div class="button" onclick="calculate(2);">2</div>
+        <div class="button" onclick="calculate(3);">3</div>
+
+        <div class="button" onclick="calculate(4);">4</div>
+        <div class="button" onclick="calculate(5);">5</div>
+        <div class="button" onclick="calculate(6);">6</div>
+
+        <div class="button" onclick="calculate(7);">7</div>
+        <div class="button" onclick="calculate(8);">8</div>
+        <div class="button" onclick="calculate(9);">9</div>
+        <div class="button" onclick="calculate(0);">0</div>
+
+        <div class="equals" onclick="calculate(=);">=</div>
+
+        <div class="button" onclick="add();">+</div>
+        <div class="button" onclick="difference();">-</div>
+        <div class="button" onclick="calculate(/);">/</div>
+        <div class="button" onclick="calculate(*);">*</div>
+
+    </div>
+    <script>
+        var count = 0;
+        var display = document.getElementById("disp");
+        var gNum;
+        function calculate(x) {
+            display.innerHTML = x;
+             gNum = x;
+                
+        }
+
+        function add() {
+            count = count + gNum;
+            display.innerHTML = count;
+        }
+
+        function difference() {
+            count = count - gNum;
+            display.innerHTML = count;
+        }
+
+    </script>
+</body>
+
+</html>
