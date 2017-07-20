@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+	<head>
+    <title>CSS Positioning</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+            border: 1px solid red;
+            border-radius: 0px 20px;
+        }
+        body {
+            margin: 0px;
+            color: white;font-family: sans-serif;font-size: 20px
+        }
+        .parent1 {
+            width: 500px;
+            background-color:burlywood;
+            height: 200px;
+        }
+        .parent2 {
+            width: 500px;
+            background-color: chartreuse;
+            height: 200px;
+            left: 200px;
+            position: relative;
+        }
+        .parent3 {
+            width: 500px;
+            background-color: coral;
+            height: 200px;
+        }
+        .child1,
+        .child2,
+        .child3 {
+            height: 50px;
+            width: 100%;
+        }
+        .child1 {
+            background-color: brown;
+        }
+        .child2 {
+            background-color: blueviolet;
+            position: absolute;
+            top: 10px;
+            left: 100px;
+        }
+        .child3 {
+            background-color: hotpink;
+            position: fixed;
+            top: 10px;
+            left: 100px;
+        }
+        .grandPArent {
+            top: 100px;
+            left: 50px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="grandPArent">
+        <div class="parent1">Parent 1
+        </div>
+        <div class="parent2">
+            <div class="child1">Child 1</div>
+            <div class="child2">Child 2 is Absolute and positioned to its relative parent</div>
+            <div class="child3">Child 3 Fixed positioned to body</div>
+            Parent 2 is relative
+        </div>
+        <div class="parent3">
+            Parent 2
+        </div>
+    </div>
+</body>
+</html>
