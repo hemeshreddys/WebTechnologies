@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>best-folio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--[if lt IE 9]>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i> </a>
+            <a href="#home" class="w3-bar-item w3-button smoothScroll"></a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small smoothScroll">
+                <i class="fa fa-user"></i> ABOUT</a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small smoothScroll">
+                <i class="fa fa-th"></i> PORTFOLIO</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small smoothScroll">
+                <i class="fa fa-envelope"></i> CONTACT</a>
+        </div>
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#about" class="w3-bar-item w3-button smoothScroll" onclick="toggleFunction()">ABOUT</a>
+            <a href="#portfolio" class="w3-bar-item w3-button smoothScroll" onclick="toggleFunction()">PORTFOLIO</a>
+            <a href="#contact" class="w3-bar-item w3-button smoothScroll" onclick="toggleFunction()">CONTACT</a>
+        </div>
+    </div>
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container " id="home">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <div class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">
+                <h1>Hi, I’m Hemesh,</h1>
+            </div>
+            <div class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> a web designer / front-end developer. </div>
+            <a href="#about" class="w3-button w3-black w3-center w3-section smoothScroll" style="border-radius: 10px;opacity: 0.9;">
+                <i class="fa fa-chevron-circle-down"></i> Get Started! </a>
+        </div>
+    </div>
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">ABOUT ME</h3>
+
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <br> <img src="images/avatar.jpg" class="w3-round w3-image  w3-hover-opacity-off" alt="Photo of Me" width="500" height="333"> </div>
+            <!-- Hide this text on small devices -->
+            <div class="w3-col m6 w3-padding-large">
+                <p> Hi! My name is Hemesh. Welcome to my personal page that I’ve designed to showcase my skills and expertise that I’ve accumulated over the years. </p>
+                <p>
+                    <h4>A Little Bit About Me… </h4> <br>I’m a web designer / developer with over 9+ years of experience and I’m currently based in Melbourne, Australia.
+                </p>
+                <p> I’m very fortunate to be given the opportunity to work for amazing companies that allowed me to grow my skills. Web designing has been my passion over a long period of time and the same enthusiasm has helped me learn different web forms and eventually make diverse web applications serving various needs. </p>
+                <p> I have always enjoyed web designing for various platforms and it’s been a great pleasure to help organizations make a smart impression in the digital world by enhancing their online presence. </p>
+                <p> Along with web designing, I enjoy photography and spending quality time with my family. </p>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+        <div style="align-content: center">
+            <i class="fa fa-user"><h2>Skills</h2></i></div>
+        <div class="w3-third w3-section"> <span class="w3-xlarge">Languages</span>
+            <br> HTML3, CSS3, Javascript, <br>Actionscript3 </div>
+        <div class="w3-third w3-section"> <span class="w3-xlarge">Tools</span>
+            <br> Adobe Animate, Captivate, Photoshop,<br> Illustrator, Audition, Videoscribe, Git, Brackets, <br>Chrome Developer Tools, Koala </div>
+        <div class="w3-third w3-section"> <span class="w3-xlarge">Frameworks</span>
+            <br>Jquery, Angularjs, Bootstrap, Wordpress,
+            <br> CMS, SCSS / SASS Pre-Processor </div>
+    </div>
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle"> <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span> </div>
+    </div>
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+        <h3 class="w3-center">What I’ve been up to.</h3>
+        <p class="w3-center"><em>Here are some of my works</em></p>
+        <br>
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center">
+            <div class="w3-col m3"> <img src="images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Intermedics"> </div>
+            <div class="w3-col m3"> <img src="images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Envdirect"> </div>
+            <div class="w3-col m3"> <img src="images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Mylitter"> </div>
+            <div class="w3-col m3"> <img src="images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Eezylife"> </div>
+        </div>
+        <div class="w3-row-padding w3-center w3-section">
+            <div class="w3-col m3"> <img src="images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Envdirect"> </div>
+            <div class="w3-col m3"> <img src="images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Intermedics"> </div>
+            <div class="w3-col m3"> <img src="images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Aryan's farm seeds"> </div>
+            <div class="w3-col m3"> <img src="images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Landsquare"> </div>
+            <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+        </div>
+    </div>
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'"> <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"> <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle"> <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span> </div>
+    </div>
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+        <h3 class="w3-center">Contact</h3>
+        <p class="w3-center"><em>I'd love your feedback!</em></p>
+        <div class="w3-row w3-padding-32 w3-section">
+            <div class="w3-col m12 w3-panel">
+                <div class="w3-large w3-margin-bottom"> <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Melbourne, Australia
+                    <br> <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +61468358496
+                    <br> <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: hemeshreddy@gmail.com
+                    <br> </div>
+                <p>If you are interested in any of my service please free to send me a message.</p>
+                <form action="/action_page.php" target="_blank">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"> </div>
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"> </div>
+                    </div>
+                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                    <button class="w3-button w3-black w3-right w3-section" type="submit"> <i class="fa fa-paper-plane"></i> SEND MESSAGE </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64 w3-hover-opacity-off"> <a href="#home" class="w3-button w3-light-grey smoothScroll">Home</a>
+        <div class="w3-xlarge w3-section">© best-folio 2017 <br>
+            <a href="https://www.facebook.com/hemesh.reddy.5"><i class="fa fa-facebook-official w3-hover-opacity"></i> </a>
+            <a href="https://www.linkedin.com/in/hemesh-reddy-s-61b9b12b/"><i class="fa fa-linkedin w3-hover-opacity"></i></a> </div>
+    </footer>
+    <!-- Add Google Maps -->
+
+    <script type="text/javascript" src="js/scipt.js"></script>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
+</body>
+
+</html>
