@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <style>
+        body {
+            background-color: #000;
+        }
+        
+        #demo {
+            width: 692px;
+            height: 70px;
+            background-color: #333;
+            padding: 8px;
+        }
+        
+        .logo {
+            position: relative;
+            width: 150px;
+            height: 60px;
+            background-position: 0px 4px;
+            background-color: aqua;
+            color: #000;
+            font-family: Arial, Helvetica, sans-serif;
+            border-bottom: solid #000 10px;
+        }
+        
+        .logo p {
+            font-size: 17px;
+            margin-top: 0px;
+            margin-left: 60px;
+            line-height: 58px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="demo">
+        <div class="logo">
+            <p>Moving Animation</p>
+        </div>
+  
+    </div>
+    <br><br>
+    <button onClick="start();"> Start Animation</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+    <script>
+        function start() {
+            var logo = document.getElementsByClassName("logo");
+            TweenLite.to(logo, 2, {
+                left: "542px"
+                , backgroundColor: "black"
+                , borderBottomColor: "#90e500"
+                , color: "white"
+            });
+        }
+    </script>
+</body>
+
+</html>
