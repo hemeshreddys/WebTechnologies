@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight" rel="stylesheet">
     <style>
         * {
             margin: 0px;
@@ -50,12 +51,14 @@
         
         button {
             height: 50px;
-            background-color: dodgerblue;
+            background-color: white;
             border-radius: 10px;
             width: 200px;
             border: none;
-            color: white;
+            color: black;
             font-size: 20px;
+            cursor: pointer;
+            opacity: 0.5;
         }
         
         .outer {
@@ -77,7 +80,8 @@
         }
         
         h1 {
-            font-family: 'Quicksand', sans-serif;
+            /*font-family: 'Quicksand', sans-serif;*/
+            font-family: 'Zilla Slab Highlight', cursive;
             font-size: 50px;
             text-align: center;
         }
@@ -87,14 +91,22 @@
 <body>
     <div class="container">
         <div class="innerContainer">
-            <h1>The key to a greener planet is in your hands</h1>
+            <h1>The key to a Greener Planet is in your hands</h1>
             <br>
             <br>
             <br>
             <br>
-            <button>Submit</button>
+            <br>
+            <br>
+            <br>
+            <button>View</button>
         </div>
     </div>
 </body>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenLite.min.js"></script>
+    <script src="script.js"></script>
 </html>
