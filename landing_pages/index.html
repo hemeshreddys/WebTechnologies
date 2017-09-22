@@ -5,6 +5,7 @@
     <title>Page Title</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <style>
         * {
             margin: 0px;
@@ -16,47 +17,69 @@
             background-size: cover;
             width: 100vw;
             height: 100vh;
-              margin: 0px auto;
+            margin: 0px auto;
+            display: flex;
+            flex-direction: column;
         }
         
         .innerContainer {
-            position: absolute;
+            color: white;
             top: 20%;
             left: 20%;
-            width: 600px;
             height: 300px;
-            background-color:white;
-            opacity: 0.7;
+            width: 50%;
             padding: 50px 50px 50px 50px;
-          
+            text-align: center;
+            align-content: center;
+            align-self: center;
+            margin-top: 5%;
         }
-        input[type="text"]{
+        
+        input[type="text"] {
             width: 300px;
             height: 40px;
             font-family: sans-serif;
             font-size: 15px;
             border-radius: 10px;
             padding-left: 10px;
-            
         }
+        
         input[type="text"]:focus {
             outline: none;
         }
-        button{
+        
+        button {
             height: 50px;
-            background-color:purple;
+            background-color: dodgerblue;
             border-radius: 10px;
             width: 200px;
             border: none;
-            color:white;
-            font-size: 15px;
+            color: white;
+            font-size: 20px;
         }
-        .outer{
+        
+        .outer {
+            height: 400px;
+            width: 100vw;
+            background-color: purple;
+            top: 100%;
+            color: white;
+            padding: 40px;
+        }
+        
+        .outer2 {
             height: 100px;
-            width: 300px;
-            background-color: aqua;
-            position:relative;
-            top:100%;
+            width: 100vw;
+            background-color: gray;
+            top: 100%;
+            color: white;
+            padding: 40px;
+        }
+        
+        h1 {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 50px;
+            text-align: center;
         }
     </style>
 </head>
@@ -64,18 +87,13 @@
 <body>
     <div class="container">
         <div class="innerContainer">
-            <input type="text" placeholder="Enter Email"> 
+            <h1>The key to a greener planet is in your hands</h1>
+            <br>
+            <br>
+            <br>
+            <br>
             <button>Submit</button>
-            </div>
-            <div class="outer">
-                About this site
-                
-            </div>
-            <div class="outer">
-                About this site
-                
-            </div>
-            
+        </div>
     </div>
 </body>
 
