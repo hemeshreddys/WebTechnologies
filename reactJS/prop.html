@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>thenewboston</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div id="content"></div>
+
+    <script type="text/jsx">
+    
+   var Movie = React.createClass({
+       render : function(){
+           return(
+               <div>
+               <h1>{this.props.title}</h1>
+               <h2>{this.props.genre}</h2>
+               </div>
+           );
+       }
+   });
+
+
+        React.render(
+            <div>
+            <Movie title="Avatar" genre="Action"/>
+            <Movie title="Bolt" genre="Animation"/>
+            <Movie title="Roja" genre="Drama"/>
+            </div>
+            , document.getElementById('content'));
+    </script>
+
+</body>
+</html>
