@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>thenewboston</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+      
+    </style>
+</head>
+<body>
+<div id="container">1</div>
+
+<script type="text/jsx">
+var Comment = React.createClass({
+    getInitialState : function(){
+      return {editing:false}  
+    },
+    edit:function(){
+        console.log('edit');
+      this.setState({editing:true});  
+    },
+    remove:function(){
+        console.log('remove');
+        this.props.deleteFromBoard(this.props.index)
+    },
+    save:function(){
+       console.log('save'); this.props.updateCommentText(this.refs.newText.value,this.props.index);
+        this.setState({editing:false});
+    },
+    renderNormal:function(){
+        return(
+            <div>
+               <div>{this.props.children}</div>
+                <button onClick={this.edit}>Edit</button>
+                <button onClick={this.remove}>Remove</button>
+            </div>
+        );
+    },
+    renderForm:function(){
+        return{
+            <div>
+               <textarea ref="newText" defaultValue={this.props.children}></textarea>
+               <button onClick={this.save}> Save</button>
+                
+            </div>
+        }
+    },
+    render:function(){
+        if(this.state.editing){
+           return this.renderForm();
+           }else{
+               return this.renderNormal();
+           }
+    }
+    
+});
+
+var Board = React.createClass({
+    getInitialState:function(){
+        console.log('getInitialState');
+        return{
+            comments:[
+                'First Comp',
+                'Second Comp',
+                'Third Comp'
+            ]
+        }
+    },
+    removeComment:function(i){
+        console.log('removeComment');
+        var arr = this.state.comments;
+        arr.splice(i,1);
+        this.setState({comments:arr});
+    },
+    updateComment:function(newText,i){
+        console.log('updateComment');
+        var arr = this.state.comments;
+        arr[i] = newText;
+        this.setState({comments:arr})
+        
+    },
+    eachComment:function(text,i){
+        return(
+        <Comment key={i} index={i} updateCommentText={this.updateComment} deleteFromBoard={this.removeComment}>
+            {text}
+        </Comment>
+        );
+        
+    },
+    render:function(){
+        return(
+            <div>
+                {this.state.comments.map(this.eachComment)}
+            </div>
+        );
+    }
+});
+
+React.render(<Board/>,document.getElementById('container'));
+
+    
+</script>
+
+</body>
+</html>
+
+
+
+

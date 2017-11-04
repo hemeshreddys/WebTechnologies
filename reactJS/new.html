@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>thenewboston</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+        .nStyle{
+            
+            width:200px;
+            height: 100px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+<div id="container">1</div>
+
+<script type="text/jsx">
+
+var HelloWorld = React.createClass({
+  render: function() {
+    	return <div className="nStyle">Hello, {this.props.name}!</div>;
+    }
+});
+
+React.render( <div>
+   <HelloWorld name="Chris Harrington"/>
+   <HelloWorld name="Chris Harrington"/>
+   <HelloWorld name="Chris "/>
+   <HelloWorld name="Chris Harrington"/>
+   <HelloWorld name="Chris Harrington"/>
+    
+    </div>
+    , document.getElementById('container'));
+
+    
+</script>
+
+</body>
+</html>
+
+
+
+

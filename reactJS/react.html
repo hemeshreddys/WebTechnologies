@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>thenewboston</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+      
+    </style>
+</head>
+<body>
+<div id="elementR"></div>
+
+<script type="text/jsx">
+
+
+
+  var Movie = React.createClass({
+       render : function(){
+           return(
+               <div>
+               <h1>Main Content</h1>
+               <h3>{this.props.title}</h3>
+               <h4>{this.props.genre}</h4>
+               </div>
+           );
+       }
+   });
+
+var ReactfirstApp = React.createClass({
+     render : function(){
+        return (
+            <div><h1>Header</h1></div>
+        );
+    }
+});
+var FooterC = React.createClass({
+    render:function(){
+        return <h1>Footer</h1>
+    }
+});
+
+React.render(<div>
+  <ReactfirstApp/>
+   <Movie title="Note book" genre="romance"/>
+   <FooterC/>
+    </div>
+   ,document.getElementById('elementR'));
+    
+        </script>
+
+</body>
+</html>
+
+
+
+
