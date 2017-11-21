@@ -1,0 +1,35 @@
+.bodyContiner{
+    background-color:lightgrey;
+}
+.media-heading{
+    font-size: 20px;
+}
+
+
+.searchStyle{
+    
+    margin: 20px 0px;
+    margin-left:20px;
+}
+input{
+    width: 90%;
+    
+    padding: 12px;
+    font-size: 20px;
+    color: dimgrey;
+}
+input:focus {
+    outline:none;
+}
+.details{
+    font-size: 30px;
+}
+
+.list-group-item{
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.list-group-item:hover{
+    background-color:darkgray;
+    color: white;
+}
