@@ -7,13 +7,28 @@ body {
     .box1 {
         @include colorChange(80%, $secondaryColor);
         color: $third;
-        
     }
     .box3 {
         @extend .fixedWidth;
         background-color: white;
         color: $third;
-        
     }
-   
 }
+
+
+// media queries for 3 resolution 
+$map: (850: 12, 450: 6, 380: 3);
+
+@each $key,
+$val in $map {
+    @media all and (max-width: $key+px) {
+        @for $i from 1 through $val {
+            $equ: 100% / $i;
+            #grid.cell-#{$key}-#{$i} > div {
+                width: $equ;
+            }
+        }
+    }
+}
+
+

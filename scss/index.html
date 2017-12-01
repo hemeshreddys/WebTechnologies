@@ -11,22 +11,60 @@
 
 <body>
     <div class="box1">
-        <h1>Sass Basics</h1>
+        <h1>Scss </h1>
     </div>
 
-     <div class="box3">
-        <h1>Properties</h1>
+    <div class="box3">
+        
+        <h5>Scss Commands</h5>
+        <code>
+        sudo gem install sass<br>
+        
+         sass -v 
+        <pre>
+            sass —watch sassFilesDirectory:OutputDirectory
+            sass —watch style.scss:style.css
+
+            sass style.scss:style.css
+
+            sass style.scss:style.css —style compact
+            sass style.scss:style.css —style compressed
+            sass style.scss:style.css —style expanded
+
+            sass style.scss:style.css —style expanded —sourcemap=none
+        </pre>
+    </code>
+
+        <code class="codeStyle">
+       <pre>
+            // media queries for 3 resolution 
+            $map: (<span style="color: red;">850: 12, 450: 6, 380: 3</span>);
+            @each $key,
+            $val in $map {
+                @media all and (max-width: $key+px) {
+                    @for $i from 1 through $val {
+                        $equ: 100% / $i;
+                        #grid.cell-#{$key}-#{$i} > div {
+                            width: $equ;
+                        }
+                    }
+                }
+            }
+        </pre>
+    </code>
+    
+    <h3>Properties</h3>
         <ol>
-        <li>Variables</li>
-        <li>Mixins</li>
-        <li>Partials / Import</li>
-        <li>Extend/Inheritance</li>
-        <li>Operators</li>
-        <li>Nesting</li>
-    </ol>
+            <li>Variables</li>
+            <li>Mixins</li>
+            <li>Partials / Import</li>
+            <li>Extend/Inheritance</li>
+            <li>Operators</li>
+            <li>Nesting</li>
+        </ol>
     </div>
-    
-    
+
+
 </body>
 
 </html>
