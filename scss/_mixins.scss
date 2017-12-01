@@ -2,8 +2,10 @@
 @mixin colorChange($radius,$col){
     height: $radius;
     width:  $radius;
-    color:  red;
     border: 1px solid $col;
+    margin: 0px auto;
+    background-color: white;
+    padding: 20px 50px;
 }
 
 

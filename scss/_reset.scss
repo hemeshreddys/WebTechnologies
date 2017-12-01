@@ -1,10 +1,25 @@
-h1{
-    font-size: 40px;
-    color: red;
+html, body, ul, ol {
+  margin: 0;
+  padding: 0;
 }
 
- .mes {
+body {
+  font: 100% Helvetica, sans-serif;
+  background-color: #efefef;
+}
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 40px;
+    
+}
+
+ .fixedWidth {
         border: 1px solid #ccc;
-        padding: 10px;
+        padding: 50px;
         color: #333;
+        width: 80%;
+        margin: 0px auto;
     }

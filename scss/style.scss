@@ -5,17 +5,15 @@ body {
     background-color: $third;
     color: $secondaryColor;
     .box1 {
-        @include colorChange(100px, $secondaryColor);
-    }
-    .box2 {
-        @include colorChange(200px, $secondaryColor);
+        @include colorChange(80%, $secondaryColor);
+        color: $third;
+        
     }
     .box3 {
-        @extend .mes;
+        @extend .fixedWidth;
+        background-color: white;
+        color: $third;
+        
     }
-    .mes {
-        border: 1px solid #ccc;
-        padding: 10px;
-        color: #333;
-    }
+   
 }
