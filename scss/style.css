@@ -1,0 +1,28 @@
+h1 {
+  font-size: 40px;
+  color: red; }
+
+.mes, body .box3 {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333; }
+
+body {
+  background-color: purple;
+  color: green; }
+  body .box1 {
+    height: 100px;
+    width: 100px;
+    color: red;
+    border: 1px solid green; }
+  body .box2 {
+    height: 200px;
+    width: 200px;
+    color: red;
+    border: 1px solid green; }
+  body .mes, body .box3 {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333; }
+
+/*# sourceMappingURL=style.css.map */

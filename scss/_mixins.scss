@@ -1,0 +1,9 @@
+// MIXINS
+@mixin colorChange($radius,$col){
+    height: $radius;
+    width:  $radius;
+    color:  red;
+    border: 1px solid $col;
+}
+
+

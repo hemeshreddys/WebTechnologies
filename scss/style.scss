@@ -1,0 +1,21 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+body {
+    background-color: $third;
+    color: $secondaryColor;
+    .box1 {
+        @include colorChange(100px, $secondaryColor);
+    }
+    .box2 {
+        @include colorChange(200px, $secondaryColor);
+    }
+    .box3 {
+        @extend .mes;
+    }
+    .mes {
+        border: 1px solid #ccc;
+        padding: 10px;
+        color: #333;
+    }
+}
