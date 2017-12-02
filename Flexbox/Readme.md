@@ -37,3 +37,10 @@ Text attributes _italic_, *italic*, __bold__, **bold**, `monospace`.
 A [link](http://example.com).
 
 ![Image](https://upload.wikimedia.org/wikipedia/commons/f/f0/Image_icon.png)
+
+
+
+| ﻿Class Name | | | | 
+|--------------------|--------------------|--------------------|--------------------|
+| `bounce` |`flash` |`pulse` |`rubberBand` |
+| `shake` |`headShake` |`swing` |`tada` |
