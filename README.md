@@ -1,23 +1,23 @@
 
-##Web Technologies
-#CSS Flexbox,
+## Web Technologies
+### CSS Flexbox,
 
-#CSS Grid,
+### CSS Grid,
 
-#My Portfolio - http://best-folio.com/mysite.html
+### My Portfolio - http://best-folio.com/mysite.html
 
-#Angularjs,
+### Angularjs,
 
-#CSS Styling,
+### CSS Styling,
 
-#JQuery,
+### JQuery,
 
-#Button Styles,
+### Button Styles,
 
-#HTML5 Banners,
+### HTML5 Banners,
 
-#Landing pages,
+### Landing pages,
 
-#HTML5 Animations,
+### HTML5 Animations,
 
-#Games
+### Games
