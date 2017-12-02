@@ -16,7 +16,7 @@ Ordered List
 
 ==
 
-```
+```html
 <!doctype html>
 <html>
 	<head>
@@ -29,6 +29,16 @@ Ordered List
 
 	</body>
 </html>
+```
+
+```css
+body{
+  padding:10px 10px 10px 10px;
+}
+```
+
+```javascript
+document.getElemetById("classname");
 ```
 
 Para1 aaaaaaaaaa no space here 
