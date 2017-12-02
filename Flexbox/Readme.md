@@ -40,7 +40,7 @@ A [link](http://example.com).
 
 
 
-| ﻿Class Name | | | | 
+| Table | | | | 
 |--------------------|--------------------|--------------------|--------------------|
-| `bounce` |`flash` |`pulse` |`rubberBand` |
-| `shake` |`headShake` |`swing` |`tada` |
+| `row1` |`Col1` |`pulse` |`rubberBand` |
+| `row2` |`col2` |`swing` |`tada` |
