@@ -30,3 +30,5 @@ Ordered List
 	</body>
 </html>
 ```
+
+Text attributes _italic_, *italic*, __bold__, **bold**, `monospace`.
