@@ -32,3 +32,8 @@ Ordered List
 ```
 
 Text attributes _italic_, *italic*, __bold__, **bold**, `monospace`.
+
+
+A [link](http://example.com).
+
+![Image](https://upload.wikimedia.org/wikipedia/commons/f/f0/Image_icon.png)
